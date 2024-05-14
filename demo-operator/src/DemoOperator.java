@@ -82,6 +82,20 @@ public class DemoOperator {
     boolean r12 = 10/2 == 5*3; //false 
     //System.out.println("r12 "+r12);
 
+    int n = 3;
+    int result = n++ *3; // original n multiple first, assign 9 to the result, then n = n + 1;
+    System.out.println(result); //
+    System.out.println(n); //
+
+    int m = 4;
+    int result2 = ++m * 5; // m = m+1 first, then assign 25 to result 2
+    System.out.println(result2); //
+    System.out.println(m); //    
+
+    int k=4;
+    int result3= k++ * 7* ++k;
+    System.out.println(result3); //168; (4*7) *6
+
   }
   
 }

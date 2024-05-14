@@ -1,4 +1,4 @@
-public class App {
+public class DemoIf {
     public static void main(String[] args){ //code block
 
         //condition: if 
