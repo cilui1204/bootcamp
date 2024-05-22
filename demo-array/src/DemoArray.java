@@ -30,9 +30,9 @@ public class DemoArray {
         System.out.println(strings[1]);
         System.out.println(strings[2]);      
 
-        byte[] bytes = new byte[]{};
-        long[] longs= new long[]{};
-        double[]  di= new double[]{};
+        byte[] bytes = new byte[]{2,3,4};
+        long[] longs= new long[]{2,3,4};
+        double[]  d1= new double[]{2.0, 3.3, 4};
 
         //Arrays
         System.out.println(Arrays.toString(strings)); //[hello,abc.ijk]
@@ -112,11 +112,46 @@ public class DemoArray {
             concat2 += c2[i];
          }
          concat3 = concat1 + concat2;
-         System.out.println(concat3);
+         System.out.println(concat3); 
 
-         //4b. result -> obkt when even index, get value from c1, when odd index, get the value from c2
+         //4b. result -> obkt when even index, get value from c1, 
+         //when odd index, get the value from c2
+
+         //obkta
+         String concat5="";
+         char[] c3 = new char[]{'o','a','k','p','a','b'};
+         char[] c4 = new char[]{'a','b','f','t'};
+
+         int length_2= c3.length>c4.length ? c3.length:c4.length;
+
+         for (int i=0; i<length_2; i++){
+            if (i%2==0 && i<c3.length){
+                concat5+=c3[i];
+            }else if (i%2==1 && i<c4.length){
+                concat5+=c4[i];
+            }
+         }
+         System.out.println("Result concat5= "+ concat5);
+
+
+
+
+
+
+
+
          String concat4="";
-         for (int i=0; i<c1.length; i++){
+         int length= c1.length > c2.length? c1.length :c2.length;
+
+
+         
+         //if (c1.length>c2.length){
+         //   length=c1.length;
+         //}else{
+        //  length=c2.length;
+        // }
+
+         for (int i=0; i<length; i++){
             if (i%2==0){
                 concat4 += c1[i];
             }else{
