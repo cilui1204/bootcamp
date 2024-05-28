@@ -20,7 +20,11 @@ public class DemoMethod {
 
       System.out.println(isSubstring("Hello World", "Wo"));
 
-      System.out.println(circleArea(20));
+      System.out.println(circleArea(3));
+
+      //double * double (problem)
+      // BigDecimal (Solution)
+      System.out.println(0.2*0.1); //0.020000000000000004
 
 
       
@@ -108,7 +112,7 @@ public class DemoMethod {
     //Java -> PI
   public static double circleArea(int radius){
 
-      return (Math.PI*Math.pow(radius,2));
+      return (Math.PI*Math.pow(radius,2)); // int * int * double -> double (2*2*2.0 -> 8.0)
 
   }
 }

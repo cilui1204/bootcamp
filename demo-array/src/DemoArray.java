@@ -161,6 +161,105 @@ public class DemoArray {
          System.out.println("Result= "+concat4);
 
 
+         //average
+         int sum = 0;
+         int count2 = 0;
+         int[] arr5 = new int[]{4,8,3};
+         for (int i=0;i<arr5.length;i++){
+            sum+=arr[i];
+            count2++;
+         }
+         double average = sum/count2;
+         System.out.println(average);
+
+         //Swapping in array
+         int[] arr6 = new int[]{6,10,-4,15};
+         //Swap -4 & 6 -> [-4,10,6,15]
+         int temp;
+         temp=arr6[0];
+         arr6[0]=-4;
+         arr6[2]=temp;
+         System.out.println(Arrays.toString(arr6));
+
+
+         //Level 1 
+         //arr6 -> [-4, 6, 10, 15]
+         // move -4 to the tail of the array
+         // result [6,10,15,-4]
+         for (int i=0; i<arr6.length-1;i++){
+            int temp3 =arr6[i];
+            arr6[i]=arr6[i+1];
+            arr6[i+1]=temp3;
+
+         }
+         System.out.println(Arrays.toString(arr6));
+
+
+         //Level 2
+         //Move the max element to the tail
+         //Now: [10,6,15,-4]
+         //1st round: [6,10,15,-4]
+         //2rd round: [6,10,15,-4]
+         //3rd round: [6,10,-4,15]
+
+         
+         int temp4;
+         for (int i=0; i<arr6.length-1;i++){
+            if (arr6[i]>arr6[i+1]){
+                temp4=arr6[i+1];
+                arr6[i+1]=arr6[i];
+                arr6[i]=temp4;
+            }
+         }
+         System.out.println(Arrays.toString(arr6));
+
+
+
+
+
+
+        //[6,10,-4,15]
+         //Sorting -> [-4,6,10,15]
+
+
+         int temp5;
+         for (int i=0;i<arr6.length;i++){ //round 
+            for (int j=0; j<arr6.length-i-1;j++){ //moving 
+                if (arr6[j+1]<arr6[j]){
+                    temp5=arr6[j+1];
+                    arr6[j+1]=arr6[j];
+                    arr6[j]=temp5;
+                }  
+            }
+         }
+         System.out.println("Level3 " + Arrays.toString(arr6));
+
+         // Swap char value
+         String s = "hello"; // swap e and o -> holle
+
+         //char[] charArr = new char[s.length()];
+
+/*           for (int i=0; i<s.length();i++){
+            charArr[i]=s.charAt(i);
+         }  */
+
+         //System.out.println(charArr);
+
+         //Alrernative (String -> char[])
+         char[] charArr= s.toCharArray(); // ['h','e','l','l','o']
+
+         char swapTemp;
+         swapTemp=charArr[4];
+         charArr[4]=charArr[1];
+         charArr[1]=swapTemp;
+         s = String.valueOf(charArr); // assign a new String value to variable s
+         System.out.println(s);
+
+
+
+
+
+
 
 
 
