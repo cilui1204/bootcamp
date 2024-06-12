@@ -221,6 +221,11 @@ public class DemoArray {
         //[6,10,-4,15]
          //Sorting -> [-4,6,10,15]
 
+        //Level3
+        //Sorting-> [-4,6,10,15]
+        //Bubble sort
+        //for loop
+        //nested loop
 
          int temp5;
          for (int i=0;i<arr6.length;i++){ //round 

@@ -71,6 +71,69 @@ public class DemoNestedLoop {
     }
 
 
+    // *****
+    // *****
+    // *****
+    // *****
+    // *****
+
+
+    //tips
+    //1. new line
+    //2. Nested Loop
+
+    for (int row=0; row<5;row++){
+      for (int column=0; column<5;column++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+
+    for (int row=0; row<5; row++){
+      for (int column=0;column <5-row;column++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
+
+    // *
+    // **
+    // ***
+    // ****
+    // ***
+    // **
+    // *
+
+    int max = 4;
+    
+    for (int i =0; i<6; i++){
+      int j=0;
+      while (j<i+1 && i<4){
+        System.out.print("*");
+        j+=1;
+      }
+      int k=6-i;
+      int L = 0;
+      while (L!=k && i>=4){
+        System.out.print("*");
+        L +=1;
+      }
+      System.out.println("");
+    }
+      
+    
+
+    
+
+
   
 
 
