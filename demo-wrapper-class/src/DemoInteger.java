@@ -19,7 +19,7 @@ public class DemoInteger {
 
         x2 += 60000;
         short s2 = x2.shortValue(); // overflow, similar to explicit conversion
-        System.out.println(s2);
+        System.out.println("s2= "+ s2);
 
         double d2 = x2.doubleValue();
         System.out.println(d2);
